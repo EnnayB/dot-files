@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/yanne/Documents/cool_mendel-opichat-2024/basic_client'
+let g:netrw_dirhist_4='/home/yanne/Documents/cool_mendel-opichat-2024/src'
+let g:netrw_dirhist_3='/home/yanne/.scripts'
+let g:netrw_dirhist_2='/home/yanne/Documents/yanne-said.bensafia-piscine-2024/sieve_eratosthenes'
+let g:netrw_dirhist_1='/home/yanne/.config/alacritty'
