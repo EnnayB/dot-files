@@ -8,6 +8,8 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ervandew/supertab'
 
 call plug#end()
 
@@ -15,8 +17,9 @@ call plug#end()
 set encoding=utf8 fileencodings=
 syntax on
 colorscheme codedark
-set guifont=FiraCode
+set guifont='FiraCode'
 let g:airline_theme='onehalfdark'
+let g:SuperTabDefaultCompletionType = "<c_n>"
 
 set number
 set cc=80
@@ -27,6 +30,8 @@ set softtabstop=4
 set smarttab
 set autoindent
 set nocompatible
+set cindent
+set cinoptions+=:0g0i0(0
 
 highlight Pmenu ctermbg=DarkGrey guibg=DarkGrey
 highlight PmenuSel ctermbg=Blue guibg=Blue
@@ -57,3 +62,4 @@ nnoremap <Space> <Nop>
 :nnoremap <Leader>m :make 
 :nnoremap <Leader>f :NERDTree <Cr>
 :nnoremap <Leader>g :Git <Cr>
+:nnoremap <Leader>/ :noh <Cr>
